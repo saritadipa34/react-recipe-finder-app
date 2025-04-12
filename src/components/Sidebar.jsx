@@ -15,8 +15,8 @@ export default Sidebar;
 
 const DesktopSidebar=()=>{
     return(
-        <div className="min-h-screen w-[100px] sm:flex flex-col gap-5 md:w-[230px] sm:pt-[10px] md:px-[30px] px-[10px] sm:border-r  md:border-r ">
-            <div className=" sticky  left-0 top-0 w-full">
+        <div className="min-h-screen w-[100px] sticky sm:flex flex-col gap-5 md:w-[230px] sm:pt-[10px] md:px-[30px] px-[10px] sm:border-r  md:border-r ">
+            <div className=" sticky left-0 top-0 w-full">
                 <div className="w-full">
                 <img className="h-[120px] w-full  hidden md:block " src="/desktoplogo.png" alt="logo1" />
                 <img className="z-1 h-[100px] mb-[20px] block md:hidden " src="/mobilelogo.jpeg" alt="logo2" />
