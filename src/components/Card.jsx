@@ -5,14 +5,11 @@ import { Link } from "react-router-dom";
 
 
 const Card=({card})=>{
-    console.log(card);
-    
-    if(card){
-        console.log(card)
-    } 
     
     return(
+        
         <div className="w-[270px] h-[200px] p-0 relative cursor-pointer bg-red-300">
+     
             <img className="h-[110px] w-full " src={card.strMealThumb} alt="food" />
             <FaRegHeart className="absolute bottom-0 right-0" size={"20px"}/>
             <h1 className="font-bold mt-3 mx-3 ">{card.strMeal}</h1>
