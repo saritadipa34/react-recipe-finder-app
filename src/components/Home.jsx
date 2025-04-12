@@ -29,7 +29,7 @@ getData();
             <div className="flex flex-wrap gap-5">
             {
                 cardData.map((card,i)=>{
-            return  <Card  key={i} card={card} />
+            return  <Card  key={i} card={card}/>
                 })
 }
 </div>
