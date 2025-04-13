@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Card=({card})=>{
-    
+  
     return(
         
         <div className="w-[270px] h-[200px] p-0 relative cursor-pointer bg-red-300">
