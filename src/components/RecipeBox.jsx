@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 
 const RecipeBox=()=>{
     const location=useLocation();
-    console.log(location)
+
     const instructions=location.state.card.strInstructions;
     const mainItem=location.state.card.strMeal;
     return(

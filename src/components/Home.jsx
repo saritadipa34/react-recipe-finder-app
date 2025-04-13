@@ -6,6 +6,21 @@ const Home=()=>{
 const [cardData,setCardData]=useState([]);
 const [search,setSearch]=useState('chicken');
 const [inputValue,setInputValue]=useState('');
+const [addFav,setAddFav]=useState([]);
+
+useEffect(()=>{
+const stored=localStorage.getItem("card");
+if(stored){
+    setAddFav(JSON.parse(stored));
+}
+},[])
+
+const handleFav=(card)=>{
+    console.log("added")
+    const favItems=[...addFav,card];
+    setAddFav(favItems);
+    localStorage.setItem("card",JSON.stringify(favItems));
+}
 
 const handleClick=()=>{
     setSearch(inputValue);
@@ -42,7 +57,7 @@ getData();
             <div className="flex flex-wrap gap-5">
             {
                 cardData.map((card,i)=>{
-            return  <Card  key={i} card={card}/>
+            return  <Card  key={i} card={card} idMeal={card.idMeal} onClick={()=>handleFav(card)}/>
                 })
 }
 </div>
